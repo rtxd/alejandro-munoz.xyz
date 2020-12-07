@@ -12,7 +12,7 @@ const Lede = styled.h2`
   color: #ffffff;
 `;
 
-const HeroContainer = styled.div`
+const HeroContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
