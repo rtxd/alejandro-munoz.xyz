@@ -1,5 +1,8 @@
 import { Grid } from "@material-ui/core";
-import { SectionHeading } from "../styled components/SectionStyles";
+import {
+  SectionHeading,
+  SectionContainer,
+} from "../styled components/SectionStyles";
 import styled from "styled-components";
 
 const Heading = styled.h3`
@@ -8,7 +11,7 @@ const Heading = styled.h3`
 
 function Skills() {
   return (
-    <section>
+    <SectionContainer>
       <SectionHeading>Skills</SectionHeading>
       <Grid container direction="row" justify="space-evenly">
         <div>
@@ -31,7 +34,7 @@ function Skills() {
           </ul>
         </div>
       </Grid>
-    </section>
+    </SectionContainer>
   );
 }
 

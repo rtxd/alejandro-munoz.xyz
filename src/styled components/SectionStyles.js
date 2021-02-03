@@ -5,4 +5,10 @@ export const SectionHeading = styled.h2`
   text-align: center;
 `;
 
+export const SectionContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+`;
+
 export const SectionText = styled.p``;
