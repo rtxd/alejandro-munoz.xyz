@@ -1,0 +1,10 @@
+.heading {
+  font-size: 24px;
+  padding: 10px;
+}
+
+.skillsSection {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70vw;
+}
