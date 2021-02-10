@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Grid, Icon } from "semantic-ui-react";
+import { Grid, Icon } from "@material-ui/core";
 import styles from "../styles/Skills.module.css";
 
 const Container = styled.section`
@@ -20,13 +20,14 @@ const Title = styled.h1`
 export default function Skills() {
   return (
     <Container>
-      <Grid verticalAlign="middle">
-        <Grid.Column floated="left">
+      Skills
+      {/* <Grid verticalAlign="middle">
+        <Grid floated="left">
           <Title>Skills</Title>
-        </Grid.Column>
-        <Grid.Column floated="right">
+        </Grid>
+        <Grid>
           <Icon name="pencil alternate" size="large"></Icon>
-        </Grid.Column>
+        </Grid>
       </Grid>
       <Grid className={styles.skillsSection} rows={2}>
         <div>
@@ -48,7 +49,7 @@ export default function Skills() {
             <li>Vue.js</li>
           </ul>
         </div>
-      </Grid>
+      </Grid> */}
     </Container>
   );
 }
