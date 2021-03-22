@@ -2,9 +2,13 @@ import styled from "styled-components";
 import styles from "../styles/Hero.module.css";
 
 const Title = styled.h1`
-  font-size: 42px;
   color: #ffffff;
   margin-bottom: 16px;
+  font-size: 49px;
+  line-height: 0.4;
+  letter-spacing: -0.033em;
+  font-weight: 300;
+  font-style: normal;
 `;
 
 const Lede = styled.h2`
@@ -23,20 +27,21 @@ const HeroContainer = styled.section`
 `;
 
 const HeroImage = styled.img`
-  width: 300px;
-  height: 300px;
-  background-color: #1f2833;
-  padding: 50px;
-  border-radius: 150px;
+  width: 250px;
+  height: 250px;
+
+  overflow: hidden;
 `;
 
 export default function Hero() {
   return (
     <HeroContainer>
-      <HeroImage
-        className={styles.Hero}
-        src="programmer_avatar_white.png"
-      ></HeroImage>
+      <div className="avatar-background">
+        <HeroImage
+          className={styles.Hero}
+          src="programmer_avatar_white.png"
+        ></HeroImage>
+      </div>
       <Title>
         Hello! I'm <b>Alejandro Munoz</b>, a front-end software developer
       </Title>
